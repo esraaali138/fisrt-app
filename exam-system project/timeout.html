@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("imges/time\ is\ out.jpg");
+            background-size: cover;
+            text-align: center;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 25px;
+            color:  #010A43;
+            margin-top: 20px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+   <script>
+    const quizResult = localStorage.getItem("quizResult");
+   
+    if (quizResult !== null) {
+      document.write(`<p>Sorry time is out!!! Your Result: ${quizResult} out of 5 </p>`);
+    } else {
+      document.write("<p>Result not available.</p>");
+    }
+   </script> 
+</body>
+</html>

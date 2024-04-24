@@ -1,0 +1,176 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+ 
+  }
+  
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-size: 0;
+}
+.div_marks {
+  width: 320px;
+  height: 90vh;
+  border-radius: 5px;
+  position: absolute; 
+  left: 70%;
+  background: rgb(241, 170, 5);
+  margin-top: 20px;
+}
+.div_marks p {
+  font-size: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  color:  #ffffff;
+  font-weight: 900;
+  padding: 8px;
+}
+.question {
+  width: 60%;
+  height: 100px;
+  padding: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+  color: rgb(241, 170, 5);
+  font-weight: bold;
+  display: inline-block;
+
+}
+.answers {
+  width: 50%;
+  height: 300px;
+  margin-left: 30px;
+
+}
+.answer {
+  width: 80%;
+  height: auto;
+  border: 1px solid#e0e0e0;
+  border-radius: 5px;
+  padding: 14px;
+  margin: 10px;
+  color:  #086b92;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  width: 100px;
+  padding: 8px;
+  background-color:  #0e77a0;
+  color: #ffffff;  
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  outline: none;
+  border: 0;
+  border-radius: 3px;
+  margin-left: 5px;
+
+} 
+#countdown {
+  width: 100px;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  background-color:  #0e77a0;
+  color: #ffffff;
+  display: block; 
+  position: fixed;
+  top: 20px; 
+  left: 50%; 
+
+}
+
+
+.active {
+  width: 40px;
+  background-color:  #0e77a0;
+  color: #ffffff;
+  border: 1px solid white;
+}
+.btnPrev {
+  display: none;
+}
+
+.btnSubmit {
+  width: 200px;
+  height: 100px;
+  margin:40px ;
+
+}
+button[type="submit"] { 
+  width: 100px;
+  padding: 10px;
+  font-size: 25px;
+  background-color:  #0e77a0;
+  color: #ffffff;  
+  border-radius: 8px;
+  border: none;
+  cursor: pointer; 
+}
+.removeMark ,.MarkedQuestion { /* delete button*/
+  width: 120px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin:20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: transparent; 
+  color:rgb(255, 15, 15);
+  border: 0; 
+}
+
+.MarkedQuestion {  /* button*/
+  color: #ffffff;
+}
+.flag {
+  width: 50px;
+}
+.icon {
+  font-size: 20px;
+  width: 30px;
+  color: red;
+  cursor: pointer;
+  margin-top: 20px;
+}
+@media(max-width:768px){
+  .div_marks{
+    display: none;
+  }
+  
+  #countdown{
+    display: none;
+  }
+  .answer,.answers,.question{
+    width: 100%;
+    margin: 0;
+  }
+  .flag{
+    display: none;
+  }
+  
+  .btnSubmit {
+display: flex;  
+flex-direction: column; 
+justify-content: center;
+align-items: center; 
+width: 90%;
+  }
+  
+} 

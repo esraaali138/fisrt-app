@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title> 
+    <link rel="stylesheet" href="css/form.css"> 
+</head> 
+<body>
+ <div class="container" style="height: 100vh;">
+  
+  <div class="form-content">
+    <form id="registrationForm">
+      <h1>Sign Up</h1>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" >
+      <span id="firstNameMessage" class="error-message"></span>
+  
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" >
+      <span id="lastNameMessage" class="error-message"></span>
+  
+      <label for="email">Email Address:</label>
+      <input type="text" id="email" name="email" > 
+      <span id="emailMessage" class="error-message"></span>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"  minlength="8">
+      <span id="passwordMessage" class="error-message"></span>
+  
+      <label for="confirmPassword">Re-enter Password:</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" >
+      <span id="confirmPasswordMessage" class="error-message"></span>
+  
+      <p class="error-message" id="errorMessage"></p>
+  
+      <input type="submit" value="Sign up" ></input>
+  </form>
+  </div>
+  <div class="img">
+  </div> 
+ </div>
+
+  
+
+      <script src="js/register.js"></script> 
+</body>
+</html> 
